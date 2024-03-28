@@ -60,3 +60,11 @@ li {
     bottom: -64px;
     right: -25px;
 }
+.row li {
+    width: 110px;
+    transition: .3s;
+}
+.btn-active,.row li:hover {
+    background-color: #1DD100 !important;
+    color: #FFFFFF !important;
+}

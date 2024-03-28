@@ -14,3 +14,49 @@ a {
     text-transform: capitalize;
     line-height: normal;
 }
+li {
+    list-style: none;
+}
+.white-ab,.gray-ab {
+    position: relative;
+}
+.white-ab::before {
+    content: '';
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: -25px;
+    right: -25px;
+}
+.white-ab::after {
+    content: '';
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    bottom: -25px;
+    right: -25px;
+}
+.gray-ab::before {
+    content: '';
+    position: absolute;
+    background-color: #F7F8F8;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: -64px;
+    right: -25px;
+}
+.gray-ab::after {
+    content: '';
+    position: absolute;
+    background-color: #F7F8F8;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    bottom: -64px;
+    right: -25px;
+}

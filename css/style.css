@@ -19,7 +19,7 @@ li {
 }
 
 .row li {
-    width: 110px;
+    width: 95px;
     transition: .3s;
 }
 .btn-active,.row li:hover {
@@ -51,6 +51,12 @@ li {
     right: -25px;
 }
 
+@media all and (min-width: 1280px) {
+    .row li {
+        width: 110px;
+    }
+}
+
 @media all and (min-width: 1024px) {
 
     .gray-ab::before {
@@ -72,5 +78,22 @@ li {
         border-radius: 50%;
         bottom: -64px;
         right: -25px;
+    }
+    
+}
+
+@media all and (max-width:639px) {
+    .row li {
+        width: auto;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .row span {
+        font-size: 14px;
+    }
+    label.bg-white {
+        height: auto;
+        text-align: center;
+        padding: 0 20px 15px;
     }
 }

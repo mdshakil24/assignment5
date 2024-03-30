@@ -20,7 +20,7 @@
         <div class="container mx-auto py-7">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
-                    <a class="raleway-font font-extrabold text-4xl text-[#030712]">P-Ticket</a>
+                    <a class="raleway-font font-extrabold text-3xl sm:text-4xl text-[#030712]">P-Ticket</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -44,7 +44,7 @@
             <div class="hero rounded-3xl pt-16 pb-32" style="background-image: url(images/banner.png);">
                 <div class="hero-content text-center text-neutral-content">
                     <div class="max-w-3xl">
-                        <h1 class="raleway-font font-extrabold text-6xl text-white leading-tight">End-to-End Travel with
+                        <h1 class="raleway-font font-extrabold text-4xl sm:text-6xl text-white leading-tight">End-to-End Travel with
                             <span class="text-[#1DD100] block">Hanif Paribahan</span></h1>
                         <p class="mb-8 pt-4 inter-font text-lg ">Online Ticketing made easy! Buy tickets online
                             hassle-free. We are here to help you to buy your ticket easy and booking your seat fast.</p>
@@ -122,12 +122,12 @@
                         travel.</p>
                 </div>
 
-                <div class="flex flex-col lg:flex-row items-center justify-between bg-white rounded-3xl basis-1/2 mt-12 px-8 py-10">
+                <div class="lg:flex lg:flex-row lg:items-center lg:justify-between lg:basis-1/2 bg-white rounded-3xl mt-12 px-8 py-10">
 
-                    <div class="basis-4/5  lg:border-r-2 border-[#1DD100] border-dashed gray-ab lg:pr-16">
+                    <div class="basis-full lg:basis-4/5  lg:border-r-2 border-[#1DD100] border-dashed gray-ab lg:pr-16">
 
                         <!-- heading  -->
-                        <div class="flex justify-between items-center mb-6">
+                        <div class="flex flex-col justify-between items-center mb-6 sm:flex-row">
                             <div class="flex justify-between items-center">
                                 <div>
                                     <img class="w-16 mr-4" src="images/bus-logo.png" alt="BusIcon">
@@ -139,7 +139,7 @@
                             </div>
                             <div>
                                 <a
-                                    class="hover:bg-[#E8FAE5] btn bg-[#E8FAE5] border-none px-5 raleway-font font-bold text-lg text-[#1DD100] leading-normal"><img
+                                    class="hover:bg-[#E8FAE5] btn bg-[#E8FAE5] border-none px-5 raleway-font font-bold text-lg text-[#1DD100] leading-normal mt-5 sm:mt-0"><img
                                         src="images/seat-green.png" alt="BusIcon">
                                     <span class="ml-1 inline-block">40 Seats left</span> </a>
                             </div>
@@ -182,7 +182,7 @@
 
                     </div>
 
-                    <div class="basis-1/5 text-center mt-5 lg:mt-0">
+                    <div class="basis-full lg:basis-1/5 text-center mt-5 lg:mt-0">
                         <!--px-8 py-8 xl:px-12 lg:py-12  ||  px-8 py-8 xl:px-12 lg:py-12 -->
                         <img class="mx-auto mb-5" src="images/fare.png" alt="Icon">
                         <h2 class="raleway-font font-bold text-2xl text-[#030712] mb-2 sm:text-3xl">550 Taka</h2>
@@ -192,8 +192,8 @@
                 </div>
 
                 <div class="bg-white rounded-3xl mt-5 py-8">
-                    <div class="flex">
-                        <div class="basis-3/5 border-r-2 border-dashed border-[#0307124d] px-8">
+                    <div class="flex flex-col lg:flex-row">
+                        <div class="basis-3/5 lg:border-r-2 lg:border-dashed lg:border-[#0307124d] px-8">
                             <h3
                                 class="raleway-font font-semibold text-2xl text-[#030712] pb-4 border-b-[1px] border-dashed border-[#03071233]">
                                 Select your seat</h3>
@@ -211,11 +211,11 @@
                             <div class="seat-for-booking">
 
                                 <!-- single row  -->
-                                <div class="row flex justify-between items-center mt-5">
+                                <div class="row flex justify-between items-center mt-5 lg:gap-8">
                                     <!-- start left side -->
-                                    <div class="flex items-center gap-8">
+                                    <div class="flex items-center sm:gap-8 gap-3">
                                         <span class="inter-font font-medium text-lg text-[#03071280]">A</span>
-                                        <div class="flex items-center gap-8">
+                                        <div class="flex items-center sm:gap-8 gap-3">
                                             <li
                                                 class="inter-font font-medium text-lg text-[#03071280] bg-[#F7F8F8] px-10 py-3 rounded-xl cursor-pointer">
                                                 A1</li>
@@ -227,7 +227,7 @@
                                     <!-- end left side -->
 
                                     <!-- start right side -->
-                                    <div class="flex items-center gap-8">
+                                    <div class="flex items-center sm:gap-8 gap-3">
                                         <li
                                             class="inter-font font-medium text-lg text-[#03071280] bg-[#F7F8F8] px-10 py-3 rounded-xl cursor-pointer btn-active">
                                             A3</li>
@@ -242,9 +242,9 @@
                                  <!-- single row  -->
                                  <div class="row flex justify-between items-center mt-5">
                                     <!-- start left side -->
-                                    <div class="flex items-center gap-8">
+                                    <div class="flex items-center sm:gap-8 gap-3">
                                         <span class="inter-font font-medium text-lg text-[#03071280]">A</span>
-                                        <div class="flex items-center gap-8">
+                                        <div class="flex items-center sm:gap-8 gap-3">
                                             <li
                                                 class="inter-font font-medium text-lg text-[#03071280] bg-[#F7F8F8] px-10 py-3 rounded-xl cursor-pointer">
                                                 B1</li>
@@ -256,7 +256,7 @@
                                     <!-- end left side -->
 
                                     <!-- start right side -->
-                                    <div class="flex items-center gap-8">
+                                    <div class="flex items-center sm:gap-8 gap-3">
                                         <li
                                             class="inter-font font-medium text-lg text-[#03071280] bg-[#F7F8F8] px-10 py-3 rounded-xl cursor-pointer">
                                             B3</li>
@@ -271,9 +271,9 @@
                                  <!-- single row  -->
                                  <div class="row flex justify-between items-center mt-5">
                                     <!-- start left side -->
-                                    <div class="flex items-center gap-8">
+                                    <div class="flex items-center sm:gap-8 gap-3">
                                         <span class="inter-font font-medium text-lg text-[#03071280]">A</span>
-                                        <div class="flex items-center gap-8">
+                                        <div class="flex items-center sm:gap-8 gap-3">
                                             <li
                                                 class="inter-font font-medium text-lg text-[#03071280] bg-[#F7F8F8] px-10 py-3 rounded-xl cursor-pointer">
                                                 C1</li>
@@ -285,7 +285,7 @@
                                     <!-- end left side -->
 
                                     <!-- start right side -->
-                                    <div class="flex items-center gap-8">
+                                    <div class="flex items-center sm:gap-8 gap-3">
                                         <li
                                             class="inter-font font-medium text-lg text-[#03071280] bg-[#F7F8F8] px-10 py-3 rounded-xl cursor-pointer">
                                             C3</li>
@@ -300,9 +300,9 @@
                                  <!-- single row  -->
                                  <div class="row flex justify-between items-center mt-5">
                                     <!-- start left side -->
-                                    <div class="flex items-center gap-8">
+                                    <div class="flex items-center sm:gap-8 gap-3">
                                         <span class="inter-font font-medium text-lg text-[#03071280]">A</span>
-                                        <div class="flex items-center gap-8">
+                                        <div class="flex items-center sm:gap-8 gap-3">
                                             <li
                                                 class="inter-font font-medium text-lg text-[#03071280] bg-[#F7F8F8] px-10 py-3 rounded-xl cursor-pointer">
                                                 D1</li>
@@ -314,7 +314,7 @@
                                     <!-- end left side -->
 
                                     <!-- start right side -->
-                                    <div class="flex items-center gap-8">
+                                    <div class="flex items-center sm:gap-8 gap-3">
                                         <li
                                             class="inter-font font-medium text-lg text-[#03071280] bg-[#F7F8F8] px-10 py-3 rounded-xl cursor-pointer">
                                             D3</li>
@@ -329,9 +329,9 @@
                                  <!-- single row  -->
                                  <div class="row flex justify-between items-center mt-5">
                                     <!-- start left side -->
-                                    <div class="flex items-center gap-8">
+                                    <div class="flex items-center sm:gap-8 gap-3">
                                         <span class="inter-font font-medium text-lg text-[#03071280]">A</span>
-                                        <div class="flex items-center gap-8">
+                                        <div class="flex items-center sm:gap-8 gap-3">
                                             <li
                                                 class="inter-font font-medium text-lg text-[#03071280] bg-[#F7F8F8] px-10 py-3 rounded-xl cursor-pointer">
                                                 E1</li>
@@ -343,7 +343,7 @@
                                     <!-- end left side -->
 
                                     <!-- start right side -->
-                                    <div class="flex items-center gap-8">
+                                    <div class="flex items-center sm:gap-8 gap-3">
                                         <li
                                             class="inter-font font-medium text-lg text-[#03071280] bg-[#F7F8F8] px-10 py-3 rounded-xl cursor-pointer">
                                             E3</li>
@@ -358,9 +358,9 @@
                                  <!-- single row  -->
                                  <div class="row flex justify-between items-center mt-5">
                                     <!-- start left side -->
-                                    <div class="flex items-center gap-8">
+                                    <div class="flex items-center sm:gap-8 gap-3">
                                         <span class="inter-font font-medium text-lg text-[#03071280]">A</span>
-                                        <div class="flex items-center gap-8">
+                                        <div class="flex items-center sm:gap-8 gap-3">
                                             <li
                                                 class="inter-font font-medium text-lg text-[#03071280] bg-[#F7F8F8] px-10 py-3 rounded-xl cursor-pointer">
                                                 F1</li>
@@ -372,7 +372,7 @@
                                     <!-- end left side -->
 
                                     <!-- start right side -->
-                                    <div class="flex items-center gap-8">
+                                    <div class="flex items-center sm:gap-8 gap-3">
                                         <li
                                             class="inter-font font-medium text-lg text-[#03071280] bg-[#F7F8F8] px-10 py-3 rounded-xl cursor-pointer">
                                             F3</li>
@@ -387,9 +387,9 @@
                                  <!-- single row  -->
                                  <div class="row flex justify-between items-center mt-5">
                                     <!-- start left side -->
-                                    <div class="flex items-center gap-8">
+                                    <div class="flex items-center sm:gap-8 gap-3">
                                         <span class="inter-font font-medium text-lg text-[#03071280]">A</span>
-                                        <div class="flex items-center gap-8">
+                                        <div class="flex items-center sm:gap-8 gap-3">
                                             <li
                                                 class="inter-font font-medium text-lg text-[#03071280] bg-[#F7F8F8] px-10 py-3 rounded-xl cursor-pointer">
                                                 G1</li>
@@ -401,7 +401,7 @@
                                     <!-- end left side -->
 
                                     <!-- start right side -->
-                                    <div class="flex items-center gap-8">
+                                    <div class="flex items-center sm:gap-8 gap-3">
                                         <li
                                             class="inter-font font-medium text-lg text-[#03071280] bg-[#F7F8F8] px-10 py-3 rounded-xl cursor-pointer">
                                             G3</li>
@@ -416,9 +416,9 @@
                                  <!-- single row  -->
                                  <div class="row flex justify-between items-center mt-5">
                                     <!-- start left side -->
-                                    <div class="flex items-center gap-8">
+                                    <div class="flex items-center sm:gap-8 gap-3">
                                         <span class="inter-font font-medium text-lg text-[#03071280]">A</span>
-                                        <div class="flex items-center gap-8">
+                                        <div class="flex items-center sm:gap-8 gap-3">
                                             <li
                                                 class="inter-font font-medium text-lg text-[#03071280] bg-[#F7F8F8] px-10 py-3 rounded-xl cursor-pointer">
                                                 H1</li>
@@ -430,7 +430,7 @@
                                     <!-- end left side -->
 
                                     <!-- start right side -->
-                                    <div class="flex items-center gap-8">
+                                    <div class="flex items-center sm:gap-8 gap-3">
                                         <li
                                             class="inter-font font-medium text-lg text-[#03071280] bg-[#F7F8F8] px-10 py-3 rounded-xl cursor-pointer">
                                             H3</li>
@@ -445,9 +445,9 @@
                                  <!-- single row  -->
                                  <div class="row flex justify-between items-center mt-5">
                                     <!-- start left side -->
-                                    <div class="flex items-center gap-8">
+                                    <div class="flex items-center sm:gap-8 gap-3">
                                         <span class="inter-font font-medium text-lg text-[#03071280]">A</span>
-                                        <div class="flex items-center gap-8">
+                                        <div class="flex items-center sm:gap-8 gap-3">
                                             <li
                                                 class="inter-font font-medium text-lg text-[#03071280] bg-[#F7F8F8] px-10 py-3 rounded-xl cursor-pointer">
                                                 I1</li>
@@ -459,7 +459,7 @@
                                     <!-- end left side -->
 
                                     <!-- start right side -->
-                                    <div class="flex items-center gap-8">
+                                    <div class="flex items-center sm:gap-8 gap-3">
                                         <li
                                             class="inter-font font-medium text-lg text-[#03071280] bg-[#F7F8F8] px-10 py-3 rounded-xl cursor-pointer">
                                             I3</li>
@@ -474,9 +474,9 @@
                                  <!-- single row  -->
                                  <div class="row flex justify-between items-center mt-5">
                                     <!-- start left side -->
-                                    <div class="flex items-center gap-8">
+                                    <div class="flex items-center sm:gap-8 gap-3">
                                         <span class="inter-font font-medium text-lg text-[#03071280]">A</span>
-                                        <div class="flex items-center gap-8">
+                                        <div class="flex items-center sm:gap-8 gap-3">
                                             <li
                                                 class="inter-font font-medium text-lg text-[#03071280] bg-[#F7F8F8] px-10 py-3 rounded-xl cursor-pointer">
                                                 J1</li>
@@ -488,7 +488,7 @@
                                     <!-- end left side -->
 
                                     <!-- start right side -->
-                                    <div class="flex items-center gap-8">
+                                    <div class="flex items-center sm:gap-8 gap-3">
                                         <li
                                             class="inter-font font-medium text-lg text-[#03071280] bg-[#F7F8F8] px-10 py-3 rounded-xl cursor-pointer">
                                             J3</li>
@@ -506,7 +506,7 @@
 
                         </div>
 
-                        <div class="basis-2/5 px-8">
+                        <div class="basis-2/5 px-8 mt-14 lg:mt-0">
                             <h3
                                 class="raleway-font font-semibold text-2xl text-[#030712] pb-4 border-b-[1px] border-dashed border-[#03071233]">
                                 Select your seat</h3>
@@ -528,9 +528,9 @@
                                         <li class="inter-font font-medium text-[16px] text-[#030712]">BDT <span>0</span></li>
                                     </div>
 
-                                    <label class="bg-white input input-bordered flex items-center gap-2 border-0 focus-within:outline-[#1DD100]  pt-8 pb-8 mt-6">
-                                        <input type="text" class="grow" placeholder="Have any copupon?" />
-                                        <button disabled class="btn btn-success bg-[#1DD100] inter-font font-bold text-white border-0 text-[16px]px-8 ">Apply</button>
+                                    <label class="bg-white input input-bordered flex flex-col sm:flex-row items-center gap-2 border-0 focus-within:outline-[#1DD100]  sm:pt-8 sm:pb-8 mt-6">
+                                        <input type="text" class="grow pt-3 pb-2" placeholder="Have any copupon?" />
+                                        <button disabled class="w-full sm:w-auto btn btn-success bg-[#1DD100] inter-font font-bold text-white border-0 text-[16px] px-8 ">Apply</button>
                                     </label>
 
                                     <div class="flex justify-between pt-6">
@@ -562,9 +562,9 @@
                                         <input class="bg-[#1DD100] w-full relaway-font font-bold text-xl text-white  p-5 rounded-xl cursor-pointer duration-300 hover:bg-[#107600]" type="submit" placeholder="Enter your email id">
                                     </div>
 
-                                    <div class="flex justify-center mb-6">
-                                        <a class="inter-font text-[16px] text-[#03071299] border-b-[1px] border-[#03071299] leading-normal mx-7" href="#">Terms and Conditions</a>
-                                        <a class="inter-font text-[16px] text-[#03071299] border-b-[1px] border-[#03071299] leading-normal mx-7" href="#">Cancellation Policy</a>
+                                    <div class="flex justify-around lg:justify-between xl:justify-center mb-6">
+                                        <a class="inter-font text-[16px] text-[#03071299] border-b-[1px] border-[#03071299] leading-normal xl:mx-7" href="#">Terms and Conditions</a>
+                                        <a class="inter-font text-[16px] text-[#03071299] border-b-[1px] border-[#03071299] leading-normal xl:mx-7" href="#">Cancellation Policy</a>
                                         
                                     </div>
 

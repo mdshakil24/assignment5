@@ -48,7 +48,7 @@
                             <span class="text-[#1DD100] block">Hanif Paribahan</span></h1>
                         <p class="mb-8 pt-4 inter-font text-lg ">Online Ticketing made easy! Buy tickets online
                             hassle-free. We are here to help you to buy your ticket easy and booking your seat fast.</p>
-                        <button
+                        <button onclick="scrollToSection('get-ticket')"
                             class="btn raleway-font bg-[#1DD100] font-bold text-[#030712] border-none py-4 px-7 text-xl h-auto">Buy
                             Tickets</button>
                     </div>
@@ -113,7 +113,7 @@
         <!-- End Offer Area  -->
 
         <!-- Start Paribahan Seating Area  -->
-        <div class="bg-[#F7F8F8] pt-28 pb-28 rounded-t-[50px] border-t-2 border-[#1DD100]">
+        <div id="get-ticket" class="bg-[#F7F8F8] pt-28 pb-28 rounded-t-[50px] border-t-2 border-[#1DD100]">
             <div class="container mx-auto">
                 <div class="text-center max-w-3xl mx-auto">
                     <h1 class="raleway-font font-bold text-4xl text-[#030712] mb-6 text-center">Hanif Paribahan</h1>
@@ -141,7 +141,7 @@
                                 <a
                                     class="hover:bg-[#E8FAE5] btn bg-[#E8FAE5] border-none px-5 raleway-font font-bold text-lg text-[#1DD100] leading-normal mt-5 sm:mt-0"><img
                                         src="images/seat-green.png" alt="BusIcon">
-                                    <span class="ml-1 inline-block">40 Seats left</span> </a>
+                                    <span class="ml-1 inline-block"><span id="seat-left">40</span> Seats left</span> </a>
                             </div>
                         </div>
                         <!-- heading  -->

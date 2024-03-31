@@ -4,3 +4,9 @@ function scrollToSection(id){
     element.scrollIntoView({behavior: "smooth"});
     console.log(id);
 }
+
+// Seat booking js
+
+const seatLeft = document.getElementById('seat-left').innerText;
+const convertNumberSeatLeft = parseInt(seatLeft)
+console.log(convertNumberSeatLeft);

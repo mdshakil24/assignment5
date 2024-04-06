@@ -4,6 +4,17 @@ function scrollToSection(id) {
     element.scrollIntoView({ behavior: "smooth" });
 }
 
+// Add hidden class
+function addHidden(id) {
+    const element = document.getElementById(id);
+    element.classList.add('hidden');
+}
+// Remove hidden class
+function removeHidden(id) {
+    const element = document.getElementById(id);
+    element.classList.remove('hidden');
+}
+
 // Seat booking js
 
 const allSeat = document.getElementsByClassName('seat-no');
@@ -64,41 +75,81 @@ for (const seat of allSeat) {
         // Cupon code
         const inputField = document.getElementById('input-field');
         const applyBtn = document.getElementById('apply-btn');
+        const lastUpdatePrice = document.getElementById('update-price');
+        const cuponLabel = document.getElementById('cupon-code');
+
+        // discount show
+        const discountContainer = document.getElementById('add-discount');
+        const discountList1 = document.createElement('li');
+        const discountList2 = document.createElement('li');
 
         if (parseInt(seatAdd.innerText) >= 4) {
             inputField.addEventListener('keyup', function (event) {
                 const inputText = event.target.value;
                 if (inputText === "NEW15") {
                     applyBtn.removeAttribute('disabled');
-                    const discountMoney = price * 15 / 100;
-                    const totalMoney = price - discountMoney;
-                    grandTotal.innerText = totalMoney;
+                    // discount show
+                    const discountMoney = parseInt(lastUpdatePrice.innerText) * 15 / 100;
+                    discountList1.innerText = 'Get Discount';
+                    discountList2.innerText = `BDT ${discountMoney}`;
+                    discountContainer.appendChild(discountList1);
+                    discountContainer.appendChild(discountList2);
+
+                    applyBtn.addEventListener('click',function(){
+                        const totalMoney = parseInt(lastUpdatePrice.innerText) - discountMoney;
+                        grandTotal.innerText = totalMoney;
+                        cuponLabel.classList.add('hidden');
+                    })
                 } else if (inputText === "Couple 20") {
                     applyBtn.removeAttribute('disabled');
-                    const discountMoney = price * 20 / 100;
-                    const totalMoney = price - discountMoney;
-                    grandTotal.innerText = totalMoney;
+                    // discount show
+                    const discountMoney = parseInt(lastUpdatePrice.innerText) * 20 / 100;
+                    discountList1.innerText = 'Get Discount';
+                    discountList2.innerText = `BDT ${discountMoney}`;
+                    discountContainer.appendChild(discountList1);
+                    discountContainer.appendChild(discountList2);
+
+                    applyBtn.addEventListener('click',function(){
+                        const totalMoney = parseInt(lastUpdatePrice.innerText) - discountMoney;
+                        grandTotal.innerText = totalMoney;
+                        coupleLabel.classList.add('hidden');
+                    })
                 } else {
                     applyBtn.setAttribute('disabled', true);
                 }
             });
         }
 
+        // Enable next button
+        const nextBtn = document.getElementById('next-btn');
+        const continueBtn = document.getElementById('continue-btn');
+        const phoneNum = document.getElementById('phone-number');
+        const allNum = '0123456789';
+        const allNumArray = allNum.split('')
+        if(event.target) {
+            phoneNum.addEventListener('keyup',function(e){
+                for(const num of allNum) {
+                    console.log(num)
+                    if(e.key === num || e.target.value) {
+                        nextBtn.classList.remove('disabled-submit');
+                    }
+                }
+            });
+        }
 
-
-
-
-
-
-
+        nextBtn.addEventListener('click',function(){
+            addHidden('main-page');
+            removeHidden('success');
+        });
+        continueBtn.addEventListener('click',function(){
+            removeHidden('main-page');
+            addHidden('success');
+        });
 
         if (seatCount === 0) {
             alert('No Seat Left, All Seat Are Booking')
             seatLeft.innerText = 40;
         }
-
-
-
     });
 }
 

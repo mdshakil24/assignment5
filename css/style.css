@@ -32,6 +32,13 @@ li {
     pointer-events: none !important; /* Disable interactions */
     cursor: none !important;
   }
+
+  .disabled-submit {
+    background-color: #0307121a !important;
+    color: #FFFFFF !important; /* Grayed out text color */
+    pointer-events: none !important; /* Disable interactions */
+  }
+
   #add-seat div {
     display: flex;
     flex-wrap: wrap;
@@ -65,7 +72,12 @@ li {
     bottom: -25px;
     right: -25px;
 }
-
+#add-discount li {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #030712;
+}
 
 @media all and (min-width: 1280px) {
     .row li {

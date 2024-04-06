@@ -22,11 +22,26 @@ li {
     width: 95px;
     transition: .3s;
 }
-.btn-active,.row li:hover {
+.row li:hover {
     background-color: #1DD100 !important;
     color: #FFFFFF !important;
 }
-
+.disabled {
+    background-color: #1DD100 !important;
+    color: #FFFFFF !important; /* Grayed out text color */
+    pointer-events: none !important; /* Disable interactions */
+    cursor: none !important;
+  }
+  #add-seat div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  #add-seat div:last-child {
+    border-bottom: 2px dashed #03071233;
+    padding-bottom: 15px;
+  }
 .white-ab,.gray-ab {
     position: relative;
 }
@@ -50,6 +65,7 @@ li {
     bottom: -25px;
     right: -25px;
 }
+
 
 @media all and (min-width: 1280px) {
     .row li {
